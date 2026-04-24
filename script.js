@@ -7,7 +7,7 @@ for (let i = 0; i < size; i++) {
         let row = document.createElement("div");
         row.classList.add("row");
         row.style.border = "1px solid black";
-        row.innerText = (i * size) + j;
+        //row.innerText = (i * size) + j;
         column.appendChild(row);
         }
     container.appendChild(column);
