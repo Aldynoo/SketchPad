@@ -10,7 +10,7 @@ function gridColor () {
 
 function makeGrid (size) {
     let area = 640 / size;
-    container.textContent = "";
+    container.innerText = "";
 
     for (let i = 0; i < size; i++) {
         let square = document.createElement("div");
@@ -35,8 +35,17 @@ function makeGrid (size) {
     });
 }
 
-makeGrid(prompt("enter a num"));
+makeGrid(16);
 
-/*function clearGrid () {
-    container.removeChild(square);
-}*/
+const input = document.querySelector("input");
+
+button.addEventListener("click" , () => {
+    let newSize = input.value;
+    newSize = parseInt(newSize);
+
+    if (newSize && newSize >= 2 && newSize <= 99) {
+    makeGrid(newSize);
+    } else {
+        alert("Enter a valid number between 2 and 99!");
+    }
+});
