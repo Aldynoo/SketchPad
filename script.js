@@ -12,7 +12,7 @@ function makeGrid (size) {
     let area = 640 / size;
     container.innerText = "";
 
-    for (let i = 0; i < size; i++) {
+    for (let i = 0; i < size * size; i++) {
         let square = document.createElement("div");
         square.classList.add("square");
         square.style.width = `${area}px`;
