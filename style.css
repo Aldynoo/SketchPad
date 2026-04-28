@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     /*justify-content: center;*/
-    border: 1px black;
+    outline: 2px solid black;
     width: 640px;
 }
 
@@ -24,15 +24,15 @@ body {
 }
 
 .square {
-    border: 1px solid gray;
+    border: 1px solid grey;
 }
 
 p {
     display: flex;
     gap: 15px;
-    margin-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 h2 {
-    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
